@@ -139,7 +139,7 @@ NSString * const kMoCalendarNumRows = @"MoCalendarNumRows";
 
 - (BOOL)isOpaque
 {
-    return YES;
+    return NO;
 }
 
 #pragma mark
@@ -772,8 +772,8 @@ NSString * const kMoCalendarNumRows = @"MoCalendarNumRows";
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-    [Theme.mainBackgroundColor set];
-    NSRectFill(self.bounds);
+//    [Theme.mainBackgroundColor set];
+//    NSRectFill(self.bounds);
     
     CGFloat radius = SizePref.cellRadius + 3;
     CGFloat sz = SizePref.cellSize;
@@ -818,7 +818,7 @@ NSString * const kMoCalendarNumRows = @"MoCalendarNumRows";
       [NSColor.clearColor set];
     }
     [outlinePath setLineWidth:1.5];
-    [outlinePath stroke];
+    //[outlinePath stroke];
 }
 
 - (NSBezierPath *)bezierPathWithStartCell:(MoCalCell *)startCell endCell:(MoCalCell *)endCell radius:(CGFloat)r inset:(CGFloat)inset useRects:(BOOL)useRects

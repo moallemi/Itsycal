@@ -104,7 +104,7 @@ Themer *Theme = nil;
 }
 
 - (NSColor *)mainBackgroundColor {
-    return [NSColor colorNamed:@"MainBackgroundColor"];
+    return NSColor.clearColor;
 }
 
 - (NSColor *)monthTextColor {
